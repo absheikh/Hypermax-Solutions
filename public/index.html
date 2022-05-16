@@ -15,6 +15,12 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -39,5 +45,30 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/zoom.js/0.0.1/zoom.min.js"
+      integrity="sha512-OhJxb3F/IiF96I1C2hoqRw8iu54GLjgaw/Bl0SRBuuK2qtPqgpKh5m15dSJxub1GwUgxVGzsBotW742Iva4Y6w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 30) {
+          $(".sticky-top").addClass("shadow");
+        } else {
+          $(".sticky-top").removeClass("shadow");
+        }
+      });
+      // $().ready(function () {
+      //   // $(".img-gallery").on("hover", function () {
+      //   alert("hellor");
+      //   // });
+      // });
+    </script>
   </body>
 </html>

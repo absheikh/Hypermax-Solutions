@@ -1,3 +1,4 @@
+import "./assets/css/style.css";
 import { Header, Footer } from "./components";
 import { Home } from "./screens";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -7,10 +8,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route
-            path="/"
-            element={<Home header={<Header />} footer={<Footer />} />}
-          />
+          <Route path="/" element={<Home header={<Header />} footer={""} />} />
         </Routes>
       </Router>
     </>
